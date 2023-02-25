@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "divine",
+  "version": "${version}",
+  "name": "Divine",
+  "description": "Fix vines growing indefinitely",
+  "authors": [
+    "jmi2k"
+  ],
+  "contact": {
+    "repo": "https://github.com/nthwire/Divine-Fabric"
+  },
+  "license": "MIT",
+  "icon": "assets/divine/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "preLaunch": [
+      "xyz.nthwire.divine.DivinePreLaunch"
+    ]
+  },
+  "mixins": [
+    "divine.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.14",
+    "fabric": "*",
+    "minecraft": "1.19.4-alpha.23.7.a"
+  }
+}
